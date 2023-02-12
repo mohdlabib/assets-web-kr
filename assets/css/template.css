@@ -1,0 +1,1469 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap");
+@import url("https://pro.fontawesome.com/releases/v5.10.0/css/all.css");
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@font-face {
+  font-family: "Maison Neue Red Bull Bold";
+  src: url("../font/5f3d7d8d3c0816db9846f501d86dc762.ttf") format("truetype");
+}
+@media (max-width: 575px) {
+  .container {
+    padding: 0px 30px;
+  }
+}
+
+.btn {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+.navbar .btn {
+  font-size: 0.875rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  padding: 0.625rem 1.25rem;
+  transition: all 0.5s ease-in-out;
+  border: 2px solid rgb(0, 174, 255);
+  border-radius: 50px;
+}
+.navbar .btn.btn-light {
+  color: white;
+  background: rgb(0, 174, 255);
+}
+.navbar .btn.btn-light:hover {
+  background: transparent;
+  color: rgb(0, 174, 255);
+  border: 2px solid rgb(0, 174, 255);
+}
+.navbar .btn:focus {
+  box-shadow: none;
+}
+
+.carousel-caption {
+  bottom: 4rem;
+  z-index: 10;
+}
+
+.carousel-item {
+  height: 86vh;
+  background: #000000;
+  color: white;
+  position: relative;
+}
+
+.overlay-image {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.5;
+}
+
+.carousel .carousel-indicators li {
+  width: 12px;
+  height: 12px;
+  margin-left: 6px;
+  border-radius: 50%;
+}
+.carousel .carousel-indicators .active {
+  background-color: rgb(0, 119, 255);
+}
+
+@media (min-width: 40em) {
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+}
+/* pagination */
+.custom-pagination {
+  margin-top: 30px;
+  display: inline-block;
+  text-decoration: none;
+}
+.custom-pagination .btn-pagin {
+  background-color: #25cbfd;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+}
+.custom-pagination a {
+  font-family: "Poppins", sans-serif;
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color 0.2s;
+  margin: 0 4px;
+}
+.custom-pagination a.active {
+  text-decoration: none;
+  background-color: #25cbfd;
+  color: white;
+  border-radius: 8px;
+}
+.custom-pagination a:hover:not(.active) {
+  text-decoration: none;
+  background-color: #80e1ff;
+  border-radius: 8px;
+}
+@media only screen and (max-width: 600px) {
+  .custom-pagination a {
+    color: black;
+    float: left;
+    padding: 5px 10px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    margin: 0 1px;
+  }
+}
+
+.font-pagin {
+  text-decoration: none;
+}
+
+.rotateme {
+  -webkit-animation-name: rotateme;
+  animation-name: rotateme;
+  -webkit-animation-duration: 30s;
+  animation-duration: 30s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
+
+@keyframes rotateme {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes rotateme {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+.preloader {
+  background-color: rgb(233, 248, 255);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999999;
+  transition: 0.6s;
+  margin: 0 auto;
+}
+
+.preloader .preloader-circle {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  border-style: solid;
+  border-width: 3px;
+  border-top-color: rgb(0, 174, 255);
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  z-index: 10;
+  border-radius: 50%;
+  box-shadow: 0 1px 5px 0 rgba(35, 181, 185, 0.15);
+  background-color: #ffffff;
+  -webkit-animation: zoom 2000ms infinite ease;
+  animation: zoom 2000ms infinite ease;
+  transition: 0.6s;
+}
+
+.preloader .preloader-circle2 {
+  border-top-color: rgb(0, 174, 255);
+}
+
+.preloader .preloader-img {
+  position: absolute;
+  top: 50%;
+  z-index: 200;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  text-align: center;
+  display: inline-block;
+  transform: translateY(-50%);
+  padding-top: 6px;
+  transition: 0.6s;
+}
+
+.preloader .preloader-img img {
+  max-width: 55px;
+}
+
+.preloader .pere-text strong {
+  font-weight: 800;
+  color: rgb(0, 174, 255);
+  text-transform: uppercase;
+}
+
+@-webkit-keyframes zoom {
+  0% {
+    transform: rotate(0deg);
+    transition: 0.6s;
+  }
+  100% {
+    transform: rotate(360deg);
+    transition: 0.6s;
+  }
+}
+@keyframes zoom {
+  0% {
+    transform: rotate(0deg);
+    transition: 0.6s;
+  }
+  100% {
+    transform: rotate(360deg);
+    transition: 0.6s;
+  }
+}
+.navbar {
+  background: white;
+  z-index: 999;
+  padding: 30px 0px;
+}
+.navbar .small-brand {
+  width: 200px;
+}
+.navbar .big-brand {
+  width: 235px;
+}
+@media screen and (max-width: 600px) {
+  .navbar .big-brand {
+    width: 200px;
+  }
+}
+.navbar .navbar-toggler {
+  line-height: inherit;
+}
+.navbar .navbar-toggler .mdi-menu {
+  font-size: 30px;
+}
+.navbar .navbar-toggler .mdi-close {
+  font-size: 20px;
+}
+.navbar .dropdown .dropdown-menu {
+  margin-top: 20px;
+  border: none;
+  border-radius: 10px;
+}
+.navbar .dropdown .dropdown-menu .dropdown-item {
+  font-weight: bold;
+}
+.navbar .navbar-menu-wrapper .navbar-nav .btn-contact-us {
+  margin-left: 130px;
+  white-space: nowrap;
+}
+@media (max-width: 992px) {
+  .navbar .navbar-menu-wrapper .navbar-nav .btn-contact-us {
+    margin-left: 0px;
+  }
+}
+.navbar .navbar-menu-wrapper .navbar-nav .nav-link {
+  font-size: 1rem;
+  padding: 0px 17px;
+  font-weight: bold;
+  color: #000000;
+}
+.navbar .navbar-menu-wrapper .navbar-nav .nav-link:hover {
+  color: #0044ff;
+  transition: all 0.3s ease;
+}
+.navbar .navbar-menu-wrapper .navbar-nav .nav-link.active {
+  color: #0044ff;
+}
+.navbar .navbar-collapse-logo {
+  display: none;
+}
+.navbar .dropdown-toggle::after {
+  display: none;
+}
+
+.header-small .navbar {
+  background: #ffffff;
+  padding: 25px 0px;
+  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.2);
+}
+.header-small .navbar.fixed-top {
+  top: -50px;
+  margin-top: 50px;
+  transition: margin-top 1s ease;
+}
+@media (min-width: 992px) {
+  .header-small .navbar .btn {
+    padding: 5px 10px;
+    margin-left: 20px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .header-small .navbar {
+    padding: 18px 0px 18px 0px;
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar .navbar-menu-wrapper .navbar-nav .nav-link {
+    font-size: 14px;
+  }
+  .navbar .navbar-menu-wrapper.navbar-collapse {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: white;
+    z-index: 20;
+    height: 100vh;
+    padding: 50px 0px;
+    width: 250px;
+    transform: translateX(100%);
+    transition: transform 0.25s ease-in-out;
+  }
+  .navbar .navbar-menu-wrapper.navbar-collapse.show {
+    transform: translateX(0);
+  }
+  .navbar .navbar-menu-wrapper.navbar-collapse ul li {
+    padding: 10px 10px;
+  }
+  .navbar .navbar-collapse-logo {
+    display: block;
+  }
+}
+body {
+  font-family: "Nunito", sans-serif;
+  margin: 0px;
+}
+body .brand-sidenav {
+  width: 70px;
+}
+body.body-top-padding {
+  padding-top: 167px;
+}
+body a:hover {
+  text-decoration: none;
+}
+body.sidebar-open .fixed-top {
+  background-color: transparent;
+}
+body.sidebar-open .fixed-top .navbar-brand-wrapper img {
+  display: none;
+}
+body.sidebar-open::before {
+  position: fixed;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 3;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.background-top {
+  height: 20vh;
+  min-height: 250px;
+  background-color: #21D4FD;
+  background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+  color: white;
+  font-size: 40px;
+  font-family: "Maison Neue Red Bull Bold", sans-serif;
+}
+
+.welcome {
+  padding-top: 90px;
+  padding-bottom: 20px;
+}
+.welcome .poster {
+  width: 350px;
+  height: 350px;
+  border-radius: 20px;
+  background-image: url("../img/abi-yodi.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+@media (max-width: 575px) {
+  .welcome .poster {
+    width: 100%;
+    height: 300px;
+  }
+}
+.welcome .text {
+  position: relative;
+  margin-top: 70px;
+}
+@media screen and (max-width: 600px) {
+  .welcome .text {
+    margin-top: 55px;
+  }
+}
+.welcome .text .title {
+  font-size: 40px;
+  font-family: "Maison Neue Red Bull Bold", sans-serif;
+}
+@media screen and (max-width: 600px) {
+  .welcome .text .title {
+    font-size: 33px;
+  }
+}
+.welcome .text .caption {
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+}
+@media screen and (max-width: 600px) {
+  .welcome .text .caption {
+    font-size: 1rem;
+  }
+}
+.welcome .link {
+  font-family: "Poppins", sans-serif;
+  margin-top: 25px;
+}
+.welcome .link span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.welcome .link span:after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f061";
+  font-weight: 900;
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -7px;
+  transition: 0.5s;
+  color: rgb(0, 0, 0);
+}
+.welcome .link a {
+  color: black;
+  cursor: pointer;
+}
+.welcome .link a:hover span {
+  padding-right: 25px;
+}
+.welcome .link a:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.history {
+  padding-top: 90px;
+  padding-bottom: 20px;
+}
+.history .poster {
+  width: 350px;
+  height: 350px;
+  border-radius: 20px;
+  background-image: url("../img/sejarah.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+@media (max-width: 575px) {
+  .history .poster {
+    width: 100%;
+    height: 300px;
+  }
+}
+.history .text {
+  position: relative;
+  margin-top: 70px;
+}
+@media screen and (max-width: 600px) {
+  .history .text {
+    margin-top: 55px;
+  }
+}
+.history .text .title {
+  font-size: 40px;
+  font-family: "Maison Neue Red Bull Bold", sans-serif;
+}
+@media screen and (max-width: 600px) {
+  .history .text .title {
+    font-size: 33px;
+  }
+}
+.history .text .caption {
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+}
+@media screen and (max-width: 600px) {
+  .history .text .caption {
+    font-size: 1rem;
+  }
+}
+.history .link {
+  font-family: "Poppins", sans-serif;
+  margin-top: 25px;
+}
+.history .link span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.history .link span:after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f061";
+  font-weight: 900;
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -7px;
+  transition: 0.5s;
+  color: rgb(0, 0, 0);
+}
+.history .link a {
+  color: black;
+  cursor: pointer;
+}
+.history .link a:hover span {
+  padding-right: 25px;
+}
+.history .link a:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.panel {
+  padding-top: 170px;
+  padding-bottom: 20px;
+}
+.panel .separator {
+  margin-top: 25px;
+  margin-bottom: 80px;
+  border: 0;
+}
+.panel .separator--line {
+  border: 0;
+  border-bottom: 8px solid #00aeff;
+  width: 0;
+  -webkit-animation: separator-width 1s ease-out forwards;
+          animation: separator-width 1s ease-out forwards;
+}
+.panel .info-panel {
+  z-index: 1;
+  margin-top: -170px;
+  position: relative;
+}
+.panel .info-panel .card {
+  border-radius: 20px;
+}
+.panel .info-panel .card .component-1 h6 {
+  font-size: 24px;
+  font-family: "Baloo Tammudu 2", cursive;
+  font-weight: 600;
+}
+@media screen and (max-width: 600px) {
+  .panel .info-panel .card .component-1 h6 {
+    font-size: 22px;
+  }
+}
+.panel .info-panel .card .component-1 p {
+  font-size: 19px;
+  font-family: "Poppins", sans-serif;
+}
+@media screen and (max-width: 600px) {
+  .panel .info-panel .card .component-1 p {
+    font-size: 17px;
+  }
+}
+.panel .info-panel .card .component-1 img {
+  width: 85px;
+}
+@media screen and (max-width: 600px) {
+  .panel .info-panel .card .component-1 img {
+    width: 66px;
+  }
+}
+.panel .info-panel .card .component-2 h6 {
+  font-size: 25px;
+  font-family: "Baloo Tammudu 2", cursive;
+  font-weight: 600;
+}
+@media screen and (max-width: 600px) {
+  .panel .info-panel .card .component-2 h6 {
+    font-size: 22px;
+  }
+}
+.panel .info-panel .card .component-2 p {
+  font-size: 19px;
+  font-family: "Poppins", sans-serif;
+}
+@media screen and (max-width: 600px) {
+  .panel .info-panel .card .component-2 p {
+    font-size: 17px;
+  }
+}
+.panel .info-panel .card .component-2 img {
+  width: 80px;
+}
+@media screen and (max-width: 600px) {
+  .panel .info-panel .card .component-2 img {
+    width: 66px;
+  }
+}
+.panel .info-panel .card .component-3 h6 {
+  font-size: 25px;
+  font-family: "Baloo Tammudu 2", cursive;
+  font-weight: 600;
+}
+@media screen and (max-width: 600px) {
+  .panel .info-panel .card .component-3 h6 {
+    font-size: 22px;
+  }
+}
+.panel .info-panel .card .component-3 p {
+  font-size: 19px;
+  font-family: "Poppins", sans-serif;
+}
+@media screen and (max-width: 600px) {
+  .panel .info-panel .card .component-3 p {
+    font-size: 17px;
+  }
+}
+.panel .info-panel .card .component-3 img {
+  width: 80px;
+}
+@media screen and (max-width: 600px) {
+  .panel .info-panel .card .component-3 img {
+    width: 66px;
+  }
+}
+@-webkit-keyframes separator-width {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@keyframes separator-width {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.news {
+  padding-top: 120px;
+}
+.news .text-title {
+  font-size: 40px;
+  font-family: "Maison Neue Red Bull Bold", sans-serif;
+}
+@media screen and (max-width: 600px) {
+  .news .text-title {
+    font-size: 33px;
+  }
+}
+.news .card {
+  border-radius: 15px;
+}
+.news .card .poster {
+  width: 100%;
+  height: 280px;
+  border-radius: 15px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+@media (max-width: 575px) {
+  .news .card .poster {
+    width: 100%;
+    height: 280px;
+  }
+}
+.news .card .content {
+  font-family: "Maison Neue Red Bull Bold", sans-serif;
+  padding: 10px;
+}
+.news .card .content .title {
+  margin-top: 15px;
+  font-size: 25px;
+}
+@media screen and (max-width: 600px) {
+  .news .card .content .title {
+    font-size: 22px;
+  }
+}
+.news .card .content .title a {
+  text-decoration: none;
+  color: black;
+}
+.news .card .content .author {
+  text-align: left;
+}
+.news .card .content .date {
+  text-align: right;
+}
+.news .link {
+  font-family: "Poppins", sans-serif;
+  margin-top: 25px;
+}
+.news .link span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.news .link span:after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f061";
+  font-weight: 900;
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -7px;
+  transition: 0.5s;
+  color: rgb(0, 0, 0);
+}
+.news .link a {
+  color: black;
+  cursor: pointer;
+}
+.news .link a:hover span {
+  padding-right: 25px;
+}
+.news .link a:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.news .slick-slide {
+  margin: 60px 18px;
+}
+.news .slick-list:hover,
+.news :active,
+.news :visited,
+.news :focus {
+  outline: none;
+}
+.news .slick-dots a {
+  position: relative;
+  display: block;
+  width: 16px;
+  height: 16px;
+  top: -32px;
+}
+.news .slick-dots span {
+  position: relative;
+  top: 82%;
+  left: 50%;
+  transform: translate(-50%, -53%);
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #00a2ff;
+}
+.news .slick-dots circle {
+  margin-top: 150px;
+  fill: none;
+  stroke: #00a2ff;
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-dasharray: 39 39;
+  stroke-dashoffset: 39;
+  transition: all 0.9s ease-in-out;
+  transition: stroke-dashoffset 0.5s cubic-bezier(0.93, 0.01, 0.15, 0.97);
+}
+.news .slick-dots .slick-active circle {
+  stroke-dashoffset: 0;
+}
+
+.footer-bottom {
+  color: white;
+  background-color: rgb(0, 140, 255);
+}
+.footer-bottom .footer {
+  margin-top: 120px;
+  padding-top: 4.625rem;
+  padding-bottom: 0.5rem;
+}
+.footer-bottom .footer .title {
+  font-size: 30px;
+  font-family: "Maison Neue Red Bull Bold", sans-serif;
+  margin-bottom: 1.5rem;
+}
+.footer-bottom .footer .footer-col {
+  margin-bottom: 2.25rem;
+}
+.footer-bottom .footer .fa-stack {
+  margin-bottom: 0.75rem;
+  margin-right: 0.5rem;
+  font-size: 1.5rem;
+}
+.footer-bottom .footer .fa-stack .fa-stack-1x {
+  color: #fff;
+  transition: all 0.2s ease;
+}
+.footer-bottom .footer .fa-stack .fa-stack-2x {
+  color: #00bfd8;
+  transition: all 0.2s ease;
+}
+.footer-bottom .footer .fa-stack:hover .fb {
+  color: rgb(0, 60, 255);
+}
+.footer-bottom .footer .fa-stack:hover .twitter {
+  color: rgb(0, 89, 255);
+}
+.footer-bottom .footer .fa-stack:hover .ig {
+  color: rgb(255, 0, 85);
+}
+.footer-bottom .footer .fa-stack:hover .yt {
+  color: rgb(255, 0, 0);
+}
+.footer-bottom .footer .fa-stack:hover .fa-stack-2x {
+  color: #00a7bd;
+}
+.footer-bottom .copyright {
+  color: white;
+  padding-top: 1rem;
+  padding-bottom: 0.375rem;
+  text-align: center;
+}
+.footer-bottom .copyright .p-small {
+  padding-top: 1.375rem;
+  border-top: 3px solid #ffffff;
+  opacity: 0.8;
+}
+
+.sambutan {
+  padding-top: 95px;
+}
+.sambutan .poster {
+  width: 100%;
+  height: 430px;
+  border-radius: 20px;
+  margin-bottom: 55px;
+  background-image: url("../img/abi-yodi.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+@media (max-width: 575px) {
+  .sambutan .poster {
+    height: 300px;
+  }
+}
+.sambutan .title {
+  font-size: 40px;
+  font-family: "Maison Neue Red Bull Bold", sans-serif;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 600px) {
+  .sambutan .title {
+    font-size: 33px;
+  }
+}
+.sambutan .text {
+  font-size: 1.1rem;
+  font-family: "Poppins", sans-serif;
+}
+@media screen and (max-width: 600px) {
+  .sambutan .text {
+    font-size: 1rem;
+  }
+}
+
+.profil {
+  padding-top: 95px;
+}
+.profil .poster {
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+  margin-bottom: 55px;
+  background-image: url("../img/profil.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+@media (max-width: 575px) {
+  .profil .poster {
+    height: 300px;
+  }
+}
+.profil .title {
+  font-size: 40px;
+  font-family: "Maison Neue Red Bull Bold", sans-serif;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 600px) {
+  .profil .title {
+    font-size: 33px;
+  }
+}
+.profil .text {
+  font-size: 1.1rem;
+  font-family: "Poppins", sans-serif;
+}
+@media screen and (max-width: 600px) {
+  .profil .text {
+    font-size: 1rem;
+  }
+}
+
+.visi {
+  padding-top: 95px;
+}
+.visi .poster {
+  width: 100%;
+  height: 350px;
+  border-radius: 20px;
+  margin-bottom: 55px;
+  background-image: url("../img/visi.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  left: 100%;
+}
+@media (max-width: 575px) {
+  .visi .poster {
+    height: 300px;
+  }
+}
+.visi .text {
+  font-size: 1.1rem;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  margin-top: 50px;
+}
+@media screen and (max-width: 600px) {
+  .visi .text {
+    font-size: 1rem;
+    margin-top: 0px;
+  }
+}
+.visi .text .title {
+  font-size: 40px;
+  font-family: "Maison Neue Red Bull Bold", sans-serif;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 600px) {
+  .visi .text .title {
+    font-size: 33px;
+  }
+}
+
+.misi {
+  padding-top: 95px;
+}
+.misi .poster {
+  width: 350px;
+  height: 400px;
+  border-radius: 20px;
+  margin-bottom: 55px;
+  background-image: url("../img/misi.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+@media (max-width: 575px) {
+  .misi .poster {
+    height: 300px;
+  }
+}
+.misi .title {
+  font-size: 40px;
+  font-family: "Maison Neue Red Bull Bold", sans-serif;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 600px) {
+  .misi .title {
+    font-size: 33px;
+  }
+}
+.misi .text {
+  font-size: 1.1rem;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  margin-top: 30px;
+}
+@media screen and (max-width: 600px) {
+  .misi .text {
+    font-size: 1rem;
+    margin-top: 0;
+  }
+}
+
+.sambutans {
+  padding-top: 95px;
+}
+.sambutans .poster {
+  width: 100%;
+  height: 430px;
+  border-radius: 20px;
+  margin-bottom: 55px;
+  background-image: url("../img/sejarah.JPG");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+@media (max-width: 575px) {
+  .sambutans .poster {
+    height: 300px;
+  }
+}
+.sambutans .title {
+  font-size: 40px;
+  font-family: "Maison Neue Red Bull Bold", sans-serif;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 600px) {
+  .sambutans .title {
+    font-size: 33px;
+  }
+}
+.sambutans .text {
+  font-size: 1.1rem;
+  font-family: "Poppins", sans-serif;
+}
+@media screen and (max-width: 600px) {
+  .sambutans .text {
+    font-size: 1rem;
+  }
+}
+
+.gallery-foto {
+  padding-top: 95px;
+}
+.gallery-foto .title {
+  font-size: 40px;
+  font-family: "Maison Neue Red Bull Bold", sans-serif;
+  margin-bottom: 35px;
+}
+@media screen and (max-width: 600px) {
+  .gallery-foto .title {
+    font-size: 33px;
+  }
+}
+.gallery-foto .lightwidget-widget {
+  overflow: hidden;
+  border: none;
+  width: 100%;
+}
+.gallery-foto .link {
+  padding-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.gallery-foto .link span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.gallery-foto .link span:after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f302";
+  font-weight: 900;
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -8px;
+  transition: 0.5s;
+  color: rgb(0, 17, 255);
+}
+.gallery-foto .link a {
+  color: black;
+  cursor: pointer;
+}
+.gallery-foto .link a:hover span {
+  padding-right: 25px;
+}
+.gallery-foto .link a:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.gallery-video {
+  padding-top: 95px;
+}
+.gallery-video .title {
+  font-size: 40px;
+  font-family: "Maison Neue Red Bull Bold", sans-serif;
+  margin-bottom: 35px;
+}
+@media screen and (max-width: 600px) {
+  .gallery-video .title {
+    font-size: 33px;
+  }
+}
+.gallery-video .image {
+  background-color: rgba(0, 204, 255, 0.61);
+  border-radius: 15px;
+}
+.gallery-video .image a {
+  text-decoration: none;
+}
+.gallery-video .image .img {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: 260px;
+  transition: 0.5s ease;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  border-radius: 15px;
+}
+.gallery-video .image .middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.gallery-video .image .text {
+  color: rgb(255, 255, 255);
+  font-size: 45px;
+  padding: 16px 32px;
+}
+.gallery-video .image:hover .img {
+  opacity: 0.3;
+}
+.gallery-video .image:hover .middle {
+  opacity: 1;
+}
+.gallery-video .link {
+  padding-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.gallery-video .link span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.gallery-video .link span:after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f144";
+  font-weight: 900;
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -8px;
+  transition: 0.5s;
+  color: rgb(255, 0, 0);
+}
+.gallery-video .link a {
+  color: black;
+  cursor: pointer;
+}
+.gallery-video .link a:hover span {
+  padding-right: 25px;
+}
+.gallery-video .link a:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.contact {
+  padding-top: 95px;
+}
+.contact .title {
+  font-size: 40px;
+  font-family: "Maison Neue Red Bull Bold", sans-serif;
+  margin-bottom: 35px;
+}
+@media screen and (max-width: 600px) {
+  .contact .title {
+    font-size: 33px;
+  }
+}
+.contact .card {
+  border-radius: 15px;
+  width: 450px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.contact .card iframe {
+  border-radius: 15px;
+  width: 100%;
+  height: 350px;
+}
+@media screen and (max-width: 600px) {
+  .contact .card {
+    margin-top: 30px;
+    width: 100%;
+  }
+}
+.contact .btn-send {
+  margin-top: 20px;
+  background-color: #0084ff;
+  color: #fff;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  border-radius: 50px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  transition: all 0.5s;
+  width: 250px;
+}
+.contact .btn-send span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.contact .btn-send span:after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f1d8";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.contact .btn-send:hover span {
+  padding-right: 25px;
+}
+.contact .btn-send:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.contact .form-group {
+  color: rgb(128, 128, 128);
+}
+.contact .form-group input {
+  height: 50px;
+  border-radius: 20px;
+  border: none;
+  background-color: #f4f6fc;
+}
+.contact .form-group textarea {
+  border: none;
+  border-radius: 20px;
+  background-color: #f4f6fc;
+  resize: none;
+  padding: 15px;
+}
+.contact .address {
+  padding: 40px 70px;
+}
+@media screen and (max-width: 600px) {
+  .contact .address {
+    padding: 15px;
+    margin-top: 20px;
+  }
+}
+.contact .address p {
+  font-size: 15px;
+  font-weight: 700;
+  color: rgb(128, 128, 128);
+}
+
+.news-page {
+  padding-top: 95px;
+}
+.news-page .title {
+  font-size: 40px;
+  font-family: "Maison Neue Red Bull Bold", sans-serif;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 600px) {
+  .news-page .title {
+    font-size: 33px;
+  }
+}
+.news-page .title .icon {
+  font-size: 30px;
+}
+@media screen and (max-width: 600px) {
+  .news-page .title .icon {
+    font-size: 25px;
+  }
+}
+.news-page .card {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  border-radius: 15px;
+  border: none;
+}
+.news-page .widget .card-header {
+  background-color: rgb(0, 183, 255);
+  border-radius: 15px;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+}
+.news-page .widget .Categories span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.news-page .widget .Categories span:after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f1d8";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -10px;
+  transition: 0.5s;
+  color: rgb(0, 225, 255);
+}
+.news-page .widget .Categories a {
+  color: black;
+  cursor: pointer;
+}
+.news-page .widget .Categories a:hover span {
+  padding-right: 25px;
+}
+.news-page .widget .Categories a:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.news-page .widget .search input {
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+.news-page .widget .search .btn {
+  background-color: rgb(0, 225, 255);
+  border: 2px solid rgb(0, 225, 255);
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  font-size: 15px;
+}
+.news-page .widget .search .btn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.news-page .widget .search .btn span:after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f002";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -10px;
+  transition: 0.5s;
+}
+.news-page .widget .search .btn:hover {
+  background-color: rgb(255, 255, 255);
+  border: 2px solid rgb(0, 225, 255);
+  color: rgb(0, 225, 255);
+}
+.news-page .widget .search .btn:hover span {
+  padding-right: 25px;
+}
+.news-page .widget .search .btn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.news-page .post {
+  border-radius: 15px;
+  border: none;
+}
+.news-page .post .poster {
+  width: 100%;
+  border-radius: 15px;
+}
+@media screen and (max-width: 600px) {
+  .news-page .post .poster {
+    margin-bottom: 20px;
+  }
+}
+.news-page .post .title-post {
+  font-size: 21px;
+  font-family: "Maison Neue Red Bull Bold", sans-serif;
+  text-decoration: none;
+  color: rgb(48, 48, 48);
+}
+.news-page .post .description {
+  margin-top: -10px;
+}
+.news-page .post .author {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+.news-page .post .profile {
+  color: rgb(73, 73, 73);
+}
+.news-page .post .profile .name {
+  font-size: 15px;
+  margin-bottom: -4px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+}
+.news-page .post .profile .date {
+  margin-top: -4px;
+  font-size: 13px;
+  font-family: "Poppins", sans-serif;
+}
+.news-page .post .btn-share {
+  background-color: rgb(0, 183, 255);
+  padding: 10px 13px;
+  color: white;
+  border-radius: 50%;
+  width: 12px;
+  height: 7px;
+  font-size: 12px;
+  text-decoration: none;
+}
+.news-page .post .btn-more {
+  margin-top: 30px;
+}
+.news-page .post .notfound {
+  font-family: "Maison Neue Red Bull Bold", sans-serif;
+  color: rgb(48, 48, 48);
+}
+.news-page .image-news-page {
+  border-radius: 15px;
+  width: 100%;
+  height: 500px;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 600px) {
+  .news-page .image-news-page {
+    height: auto;
+  }
+}
+.news-page .content-news .title-news {
+  font-size: 35px;
+  font-family: "Maison Neue Red Bull Bold", sans-serif;
+}
+@media screen and (max-width: 600px) {
+  .news-page .content-news .title-news {
+    font-size: 27px;
+  }
+}
+.news-page .content-news .text-news {
+  font-size: 1.2rem;
+}
+@media screen and (max-width: 600px) {
+  .news-page .content-news .text-news {
+    font-size: 1rem;
+  }
+}/*# sourceMappingURL=template.css.map */
